@@ -1,5 +1,6 @@
 import { Component }                          from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgxuxUserManagementService }         from '../ngxux-user-management.service';
 
 @Component({
     selector: 'ngxux-ngxux-user-management-create-dialog',
@@ -34,7 +35,12 @@ export class NgxuxUserManagementCreateDialogComponent {
 
     });
 
-    public constructor() {
+    public constructor(private ngxuxUserManagementService: NgxuxUserManagementService) {
+
+    }
+    
+    public onNextClick(): void {
+
     }
 
 }

@@ -1,7 +1,8 @@
-<ngxux-mat-dialog id="create-user">
+<ngxux-mat-dialog id="create-user"
+                  [nextEnabled]="formGroup.valid"
+                  (nextClick)="onNextClick()">
 
     <div class="wrapper">
-
 
         <form [formGroup]="formGroup">
 
@@ -64,9 +65,8 @@
 
                         <mat-button-toggle-group>
 
-
-                            <mat-button-toggle>Disabled</mat-button-toggle>
-                            <mat-button-toggle>Enabled</mat-button-toggle>
+                            <mat-button-toggle value="false">Disabled</mat-button-toggle>
+                            <mat-button-toggle value="true">Enabled</mat-button-toggle>
 
                         </mat-button-toggle-group>
 
