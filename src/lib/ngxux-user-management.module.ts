@@ -4,7 +4,7 @@ import { ReactiveFormsModule }                                       from '@angu
 import { MatButtonToggleModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { RouterModule }                                              from '@angular/router';
 import { NgxuxMatDialogModule }                                      from '@ngxux/ngxux-mat-dialog';
-import { NgxuxMatHeaderNavModule }                                   from '../../../ngxux-mat-header-nav/src/lib/ngxux-mat-header-nav.module';
+import { NgxuxMatHeaderNavModule }                                   from '@ngxux/ngxux-mat-header-nav';
 import { NgxuxUserManagementConfig }                                 from './ngxux-user-management-config';
 import { NgxuxUserManagementConfigService }                          from './ngxux-user-management-config-service';
 import { NgxuxUserManagementCreateDialogComponent }                  from './ngxux-user-management-create-dialog/ngxux-user-management-create-dialog.component';
