@@ -2,6 +2,7 @@ import { Component }                                     from '@angular/core';
 import { NgxuxMatDialogService, NgxuxMatDialogSettings } from '@ngxux/ngxux-mat-dialog';
 import { NgxuxMatHeaderNavButton }                       from '../../../ngxux-mat-header-nav/src/lib/ngxux-mat-header-nav-button';
 import { NgxuxUserManagementCreateDialogComponent }      from './ngxux-user-management-create-dialog/ngxux-user-management-create-dialog.component';
+import { NgxuxUserManagementService }                    from './ngxux-user-management.service';
 
 @Component({
 
@@ -50,13 +51,12 @@ import { NgxuxUserManagementCreateDialogComponent }      from './ngxux-user-mana
 })
 export class NgxuxUserManagementComponent {
 
-    public constructor(private dialogService: NgxuxMatDialogService) {
+    public constructor(private dialogService: NgxuxMatDialogService,
+                       private userManagementService: NgxuxUserManagementService) {
 
     }
 
     public onHeaderNavButtonClick(e: NgxuxMatHeaderNavButton): void {
-
-        console.log(e);
 
         if (e.label === 'Create User') {
 
