@@ -23,4 +23,10 @@ export class NgxuxUserManagementService {
 
     }
 
+    public createUser(user: User): Observable<User> {
+
+        return this.httpClient.post<User>(`${ this.config.API_BASE }/users`, user);
+
+    }
+
 }

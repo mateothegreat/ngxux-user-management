@@ -8,6 +8,7 @@ import { NgxuxMatHeaderNavModule }                                   from '../..
 import { NgxuxUserManagementConfig }                                 from './ngxux-user-management-config';
 import { NgxuxUserManagementConfigService }                          from './ngxux-user-management-config-service';
 import { NgxuxUserManagementCreateDialogComponent }                  from './ngxux-user-management-create-dialog/ngxux-user-management-create-dialog.component';
+import { NgxuxUserManagementSearchComponent }                        from './ngxux-user-management-search/ngxux-user-management-search.component';
 import { NgxuxUserManagementComponent }                              from './ngxux-user-management.component';
 import { NgxuxUserManagementService }                                from './ngxux-user-management.service';
 
@@ -16,8 +17,8 @@ import { NgxuxUserManagementService }                                from './ngx
     declarations: [
 
         NgxuxUserManagementComponent,
-
-        NgxuxUserManagementCreateDialogComponent
+        NgxuxUserManagementCreateDialogComponent,
+        NgxuxUserManagementSearchComponent
 
     ],
 
